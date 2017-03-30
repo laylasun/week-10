@@ -11,3 +11,20 @@ var Stamen_TonerLite = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{
   ext: 'png'
 }).addTo(map);
 
+var tabsFn = (function() {
+
+  function init() {
+    setHeight();
+  }
+
+  function setHeight() {
+    var $tabPane = $('.sidebar'),
+        tabsHeight = $('.sidebar').height();
+
+    $tabPane.css({
+      height: tabsHeight
+    });
+  }
+
+  $(init);
+})();

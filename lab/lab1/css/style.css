@@ -4,27 +4,65 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.nav-tabs {
+  position: absolute;
+  left: 0px;
+  width: 150px;
+  height: 100%;
+  border-bottom: 0;
+  background-color: #5bc0de;
+
+  li {
+    float: none;
+    margin: 0;
+
+    a {
+      margin-right: 20px;
+      border: 0;
+      background-color: #333;
+      width: 100%;
+
+      &:hover {
+        background-color: #444;
+      }
+    }
+  }
+
+  .glyphicon {
+    color: #fff;
+  }
+
+  .active .glyphicon {
+    color: #333;
+  }
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  border:0;
+}
+
 .map {
     position: absolute;
     right: 0px;
-    left: 340px;
+    left: 480px;
     height: 100%;
     top: 0;
 }
 
 .sidebar {
     position: absolute;
-    left: 0px;
-    width: 340px;
+    left: 160px;
+    width: 320px;
     top: 0;
-    bottom: 0;
+    bottom: -40px;
     overflow-y: auto;
     padding: 20px;
     padding-bottom: 60px;
 }
 
 .item {
-    padding: 10px;
+  margin-top: 10px;
+    padding: 15px;
     background-color: #eee;
 }
 
@@ -44,7 +82,7 @@ body {
     left: 0;
     width: 340px;
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
 }
 
 .sort-option {
@@ -63,12 +101,43 @@ body {
     margin: -14px -20px 20px;
     padding: 10px 20px 15px;
 }
-
+.dropdown-menu{
+  font-size:12px;
+}
 .navbar-brand {
     font-size: 14px;
     font-weight: bold;
 }
 
+#lowinv{
+  position: relative;
+  top: 5px;
+  font-size: 12px;
+  font-weight: lighter;
+  padding:5px;
+  cursor: pointer;
+}
+#lowinv-longinfo{
+  position: relative;
+  top: 0px;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #fff;
+  width: 100%;
+  background-color: #5bc0de;
+  padding: 5px;
+  text-align: center;
+
+}
+#tandy-name{
+  font-size: 22px;
+  padding: -15px;
+  font-weight: bold;
+
+}
+#searchBar{
+  height: auto;
+}
 /* =============
 Media Queries
 ============= */
